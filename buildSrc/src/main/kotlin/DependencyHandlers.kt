@@ -17,7 +17,8 @@ object DependencyHandlers {
             Dependencies.Ktor.cors,
             Dependencies.Ktor.websocket,
             Dependencies.Libraries.prometheusMicrometer,
-            Dependencies.Libraries.logback
+            Dependencies.Libraries.logback,
+            Dependencies.Libraries.jacksonJsr310,
         )
         val testImplementation = listOf(
             Dependencies.Ktor.test
@@ -30,6 +31,7 @@ object DependencyHandlers {
             Dependencies.Ktor.authJWT,
             Dependencies.Ktor.core,
             Dependencies.Ktor.statusPages,
+            Dependencies.Ktor.websocket,
             Dependencies.Libraries.jacksonDatabind,
         )
     }

@@ -8,10 +8,11 @@ import javax.sql.DataSource
 
 val databaseModule = module(createdAtStart = true) {
     single {
-        val datasource = get<DataSource>()
-        logger.info("start connect database: $datasource")
-        Database.connect(datasource)
+        val dataSource = get<DataSource>()
+        logger.info("start connect database: $dataSource")
+        Database.connect(dataSource)
     }
+
     single<DataSource> {
         val properties = get<DataSourceProperties>()
         HikariConfig().apply {

@@ -5,10 +5,11 @@ object Versions {
     const val prometheusVersion = "1.6.3"
     const val coroutinesVersion = "1.6.4"
     const val koinVersion = "3.2.2"
-    const val jacksonVersion = "2.13.2"
+    const val jacksonVersion = "2.14.1"
     const val exposedVersion = "0.41.1"
     const val hikariVersion = "5.0.1"
     const val mariadbVersion = "3.1.0"
     const val retrofitVersion = "2.9.0"
     const val allOpenVersion = "1.7.21"
+    const val flywayVersion = "9.8.3"
 }

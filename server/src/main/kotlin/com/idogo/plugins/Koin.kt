@@ -1,12 +1,14 @@
 package com.idogo.plugins
 
+import com.idogo.api.apiModules
+import com.idogo.api.controller.controllerModule
+import com.idogo.config.koin.ext.Koin
+import com.idogo.config.koin.ext.KoinApplicationStarted
+import com.idogo.config.koin.ext.KoinApplicationStopPreparing
+import com.idogo.config.koin.ext.KoinApplicationStopped
 import com.idogo.config.serverModules
 import com.idogo.data.dataModules
 import io.ktor.server.application.*
-import org.koin.ktor.plugin.Koin
-import org.koin.ktor.plugin.KoinApplicationStarted
-import org.koin.ktor.plugin.KoinApplicationStopPreparing
-import org.koin.ktor.plugin.KoinApplicationStopped
 import org.koin.logger.SLF4JLogger
 
 fun Application.installKoinModule() {
@@ -27,7 +29,7 @@ fun Application.installKoinModule() {
 }
 
 val modules = listOf(
-//    apiModules,
+    apiModules,
     dataModules,
     serverModules
 ).flatten()

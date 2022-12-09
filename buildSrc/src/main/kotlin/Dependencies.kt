@@ -40,5 +40,7 @@ object Dependencies {
         const val hikariCp = "com.zaxxer:HikariCP:${Versions.hikariVersion}"
         const val mariadb = "org.mariadb.jdbc:mariadb-java-client:${Versions.mariadbVersion}"
         const val retrofit = "com.squareup.retrofit2:retrofit:${Versions.retrofitVersion}"
+        const val jacksonJsr310 = "com.fasterxml.jackson.datatype:jackson-datatype-jsr310:${Versions.jacksonVersion}"
+        const val flyway = "org.flywaydb:flyway-core:${Versions.flywayVersion}"
     }
 }

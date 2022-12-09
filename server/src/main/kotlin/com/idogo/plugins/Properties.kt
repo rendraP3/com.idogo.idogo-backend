@@ -34,5 +34,6 @@ fun Application.jwtConfig(): JwtProperties {
         config.property("jwt.issuer").getString(),
         config.property("jwt.audience").getString(),
         config.property("jwt.expire-milliseconds").getString().toLong(),
+        config.property("jwt.refresh-validity").getString().toLong()
     )
 }

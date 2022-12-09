@@ -2,8 +2,10 @@ package com.idogo.api.exception
 
 import com.fasterxml.jackson.annotation.JsonCreator
 import com.fasterxml.jackson.annotation.JsonProperty
+import com.idogo.usecase.exception.BadRequestException
 import com.idogo.usecase.exception.BaseException
 import com.idogo.usecase.exception.NotFoundException
+import com.idogo.usecase.exception.UserAlreadyExistException
 import io.ktor.http.*
 import io.ktor.server.plugins.statuspages.*
 import io.ktor.server.response.*
